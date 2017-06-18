@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body, html {
+    box-sizing: border-box;
+    text-align: center;
+    background: white url("sky.jpg") no-repeat fixed center/100%;
+}
+
+#background {
+    background-color: white;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 250px;
+    left: 250px;
+}
+
+#calculator {
+    margin: 50px 30px 10px 30px;
+    border-style: outset;
+    border-color: gb(193, 162, 184);
+    border-width: 15px;
+    border-radius: 30px;
+    border-left: none;
+    border-top: none;
+    padding-top: 40px;
+}
+
+#result {
+    width: 650px;
+    height: 30px;
+    padding-top: 40px;
+    margin: auto;
+    padding-bottom: 20px;
+    border-style: outset;
+    border-top: none;
+    border-left: none;
+    border-width: 5px;
+    border-radius: 14px;
+    font-size: 48px;
+    text-align: right;
+    color: rgb(127, 146, 189);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#buttons {
+    margin-top: 20px;
+    width: 550px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+button {
+    width: 100px;
+    height: 80px;
+    background-color: white;
+    border: 0;
+    margin: 3px;
+    font-size: 48px;
+    color: rgb(193, 162, 184);
+    outline: none;
+}
+
+.numbers, .operators, .clearers {
+    display: inline-block;
+}
+
+.numbers button {
+    background-color: rgb(193, 162, 184);
+    color: white;
+    border-style: outset;
+    border-width: 5px;
+    border-left: none;
+    border-top:none;
+    border-radius: 14px;
+}
+
+.numbers button:active {
+    border-style: inset;
+    border-width: 5px;
+    border-radius: 14px;
+    border-left: none;
+    border-top: none;
+    
+}
+
+.operators button, .clearers button {
+    border-style: outset;
+    border-color: gb(193, 162, 184);
+    border-width: 5px;
+    border-radius: 14px;
+    border-left: none;
+    border-top: none;
+}
+
+.operators button:active, .clearers button:active {
+    border-style: inset;
+}
