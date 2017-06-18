@@ -6,9 +6,20 @@ function main() {
     var result = $("#result");
     result.text("0");
 
+    var testLength = function (number) {
+        if (number.length > 20) {
+            result.text(number.substr(number.length - 19, 19));
+            if (number.length > 25) {
+                number = "";
+                result.text("Err");
+            }
+        }
+    };
+
     $(".numbers > button").click(function () {
         number += $(this).text();
         result.text(number);
+        testLength(number);
     });
     $(".operators > button").not("#equals,#decimal").click(function () {
         operator = $(this).text();
@@ -64,6 +75,7 @@ function main() {
                 result = "ERR"
         }
         result.text(total);
+        testLength(total)
         number = "";
         newNumber = "";
     })

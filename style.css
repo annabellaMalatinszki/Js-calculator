@@ -3,7 +3,7 @@
 body, html {
     box-sizing: border-box;
     text-align: center;
-    background: white url("sky.jpg") no-repeat fixed center/100%;
+    background: white url("bluish.jpg") no-repeat fixed center/100%;
 }
 
 #background {
@@ -19,7 +19,7 @@ body, html {
 #calculator {
     margin: 50px 30px 10px 30px;
     border-style: outset;
-    border-color: gb(193, 162, 184);
+    border-color: rgb(128, 166, 148);
     border-width: 15px;
     border-radius: 30px;
     border-left: none;
@@ -40,7 +40,7 @@ body, html {
     border-radius: 14px;
     font-size: 48px;
     text-align: right;
-    color: rgb(127, 146, 189);
+    color: rgb(108, 166, 148);
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -58,7 +58,7 @@ button {
     border: 0;
     margin: 3px;
     font-size: 48px;
-    color: rgb(193, 162, 184);
+    color: rgb(99, 182, 184);
     outline: none;
 }
 
@@ -67,7 +67,7 @@ button {
 }
 
 .numbers button {
-    background-color: rgb(193, 162, 184);
+    background-color: rgb(66, 121, 122);
     color: white;
     border-style: outset;
     border-width: 5px;
@@ -87,7 +87,6 @@ button {
 
 .operators button, .clearers button {
     border-style: outset;
-    border-color: gb(193, 162, 184);
     border-width: 5px;
     border-radius: 14px;
     border-left: none;
